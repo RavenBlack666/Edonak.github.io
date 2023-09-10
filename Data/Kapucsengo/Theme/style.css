@@ -1,0 +1,221 @@
+*
+{
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    background-image: radial-gradient(white, black);
+    width:100vw;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    padding: 30px;
+}
+
+.container
+{
+    display: block;
+    max-width: 80%;
+    min-width: 70%;
+    padding:0px;
+    border-radius: 5px;
+    box-shadow: 0 0 30px black;
+    background-color: rgba(255,255,255,.2);
+    text-align: center;
+}
+
+h1{
+    color:rgb(199, 6, 6);
+    margin-bottom: 20px;
+    background-color: gray;
+    box-shadow: 0px 0px 12px 25px rgba(0,0,0,0.2) inset;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    padding:10px;
+    border-bottom: 1px solid black;
+
+}
+
+.control
+{
+    width:90%;
+    margin: 0 auto 0 auto;
+   
+}
+
+.osszeiro{
+    width:100%;
+    margin: 0 20px 0 0;
+}
+
+.osszeiro td{
+    padding:5px;
+    border-bottom: solid 1px rgba(0,0,0,.2);
+}
+
+.szovegdoboz
+{
+    width:100%;
+    font-size: 1.2em;
+}
+
+#osszeir
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.betumeretes-doboz
+{
+    display: inline-block;
+    padding: 5px 20px 5px 20px;
+    border-left: solid 1px rgba(0,0,0,.2);
+    border-right: solid 1px rgba(0,0,0,.2);
+}
+
+#betumeret
+{
+    font-size: 20px;
+    width:50px;
+    
+}
+
+#remove
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin-left:20px;
+}
+
+#papir{
+    width:210mm;
+    height: 297mm;
+    background-color:white;
+    margin:20px auto;
+    padding:10mm;
+}
+
+.keret{
+    width:72mm;
+    height: 175mm;
+    margin: 10mm auto;
+    border: 2px solid black;
+    border-radius: 35px;
+    padding: 12mm 11mm;
+    position: relative;
+}
+
+#tablazat{
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    width:50mm;
+    max-height: 155mm;
+}
+
+#tablazat, #tablazat td, #tablazat th{
+    border: .5px solid black;
+    
+}
+
+.szamsor{
+    width:10mm;
+    font-weight: bold;
+    
+}
+
+.nevek{
+    font-weight: bold;
+    width:40mm;
+    padding: 5px;
+}
+
+#print{
+    margin: 20px;
+}
+
+
+.szerelo{
+    display:block;
+    padding:10px;
+    background-color: lightgray;
+    border:1px solid black;
+    width:50mm;
+    position:absolute;
+    bottom:10mm;
+}
+
+p{
+    font-size:13px;
+    margin:3px 0 3px 0;
+}
+
+h5{
+    margin:3px 0 0 0;
+}
+.szerelo-elvalaszto
+{
+    font-size:11px;
+    margin-bottom:10px;
+    margin-top:0;
+}
+
+
+/*-------------------------------------------Nyomtatás----------------------------------------*/
+@media print{
+
+    body{
+        background:none;
+    }
+    .container{
+        box-shadow: none;
+    }
+
+    h1{
+        display:none;
+    }
+    .control{
+        display: none;
+    }
+
+    #papir{
+        display: block;
+        width:100%;
+        height: 100%;
+        padding:10mm;
+    }
+    #tablazat{
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+        width:50mm;
+    }
+    
+    #tablazat, #tablazat td, #tablazat th{
+        border: .5px solid black;
+        
+    }
+    
+    .szamsor{
+        width:10mm;
+        font-weight: bold;
+        
+    }
+    
+    .nevek{
+        font-weight: bold;
+        width:40mm;
+        padding: 5px;
+    }
+
+    #print{
+    display:none;
+    }
+}

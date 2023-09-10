@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edó programjai</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Signika Negative', sans-serif;
+        }
+
+        .container
+        {
+            width:100%;
+            height:100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("./Theme/BG_1.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+
+        }
+
+        .vezerlo
+        {
+            display: block;
+            border:2px solid rgba(255, 255, 255, .3);
+            padding:0 20px 20px 20px;
+            text-align: center;
+            border-radius: 10px;
+            overflow:hidden;
+            background-color: rgba(255, 255, 255, .3);
+            backdrop-filter: blur(2px);
+            width:355px;
+            position:relative;
+            animation-name: meretez;
+            animation-duration: 1s;
+        }
+        
+        @keyframes meretez{
+            0% {width:0; height: 0;}
+            100%{width:355px; height:202.22px;}
+
+        }
+
+        .title{
+            width:100%;
+            height:40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid rgba(255, 255, 255, .3);
+            margin-bottom: 20px;;
+
+        }
+
+       
+        h1{
+            position: absolute;
+            top:-40px;
+            animation-name: title;
+            animation-duration: 1s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes title{
+            0% { top:-40px}
+            100% {top:0px}     
+        }
+        .gombok
+        {
+            width:100%;
+            height:120px;
+            display: block;
+            position: relative;
+        }
+        li{
+            list-style-type: none;
+            background-color: #212529;
+            margin: 10px;
+            width:300px;
+            padding:5px;
+            display: block;
+            border-radius:30px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        li:hover{
+            background-color: gray;
+        }
+
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            color:white;
+        }
+
+        .button-1{
+            position: absolute;
+            right:-350px;
+            top:0;
+            animation-name: slide;
+            animation-duration:1s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .button-2{
+            position: absolute;
+            right:-350px;
+            top:40px;
+            animation-name: slide;
+            animation-duration:1s;
+            animation-delay: 3s;
+            animation-fill-mode: forwards;
+            
+        }
+
+        .button-3{
+            position: absolute;
+            right:-350px;
+            top:80px;
+            animation-name: slide;
+            animation-duration:1s;
+            animation-delay: 4s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes slide{
+            0% {right:-350px}
+            100% {right:0px}
+        }
+       
+
+
+    </style>
+     <link rel="shortcut icon" href="./Theme/favicon.ico" type="image/x-icon">
+     <link rel="icon" href="./Theme/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="vezerlo">
+            <div class="title">
+                <h1>Programlista</h1>
+            </div>
+            <div class="gombok">
+                <ul>
+                    <li class="button-1"><a href="./Data/Kapucsengo/Theme/kapucsengo.html">Kapucsengő</a></li>
+                    <li class="button-2"><a href="./Data/Edo_kulcstarto/nevjegykartya.html">Névjegykártya</a></li>
+                    <li class="button-3"><a href="./Data/Lakotelepes_progi_jav/lakcsi.html">Lakótelepes takarítósorrend</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

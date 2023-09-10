@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="docs/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="docs/favicon.ico" type="image/x-icon">
+    <title>Kapucsengő</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Kapucsengő Névsor</h1>
+            <div class="control">
+                <table class="osszeiro">
+                    
+                    <tr><td>1. lakás</td><td><input type="text" id="1-lakas" class="szovegdoboz"></td></tr>
+                    <tr><td>2. lakás</td><td><input type="text" id="2-lakas" class="szovegdoboz"></td></tr>
+                    <tr><td>3. lakás</td><td><input type="text" id="3-lakas" class="szovegdoboz"></td></tr>
+                    <tr><td>4. lakás</td><td><input type="text" id="4-lakas" class="szovegdoboz"></td></tr>
+                    <tr><td>5. lakás</td><td><input type="text" id="5-lakas" class="szovegdoboz"></td></tr>
+                    <tr><td>6. lakás</td><td><input type="text" id="6-lakas" class="szovegdoboz"></td></tr>
+                    <tr><td>7. lakás</td><td><input type="text" id="7-lakas" class="szovegdoboz"></td></tr>
+                    <tr><td>8. lakás</td><td><input type="text" id="8-lakas" class="szovegdoboz"></td></tr>
+                    <tr><td>9. lakás</td><td><input type="text" id="9-lakas" class="szovegdoboz"></td></tr>
+                    <tr><td>10. lakás</td><td><input type="text" id="10-lakas" class="szovegdoboz"></td></tr>
+                    <tr><td>11. lakás</td><td><input type="text" id="11-lakas" class="szovegdoboz"></td></tr>
+                    <tr><td>12. lakás</td><td><input type="text" id="12-lakas" class="szovegdoboz"></td></tr>
+                    <tr><td>13. lakás</td><td><input type="text" id="13-lakas" class="szovegdoboz"></td></tr>
+                    
+                </table>
+              
+                    <input type="button" value="Készítsd el!" id="osszeir">
+                    <div class="betumeretes-doboz">
+                        <label for="betumeret">Betűméret: </label>
+                        <input type="number" id="betumeret" min="8" max="16" value="12"> 
+                    </div>
+                    <input type="button" value="Törlés" id="remove">
+                   
+                   
+                    
+            </div>
+            <div class="kiir"></div>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <template>
+      <div class="keret">
+            <table id="tablazat">
+               
+            </table>
+        </div>
+
+    </template>
+</body>
+</html>

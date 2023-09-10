@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="docs/style.css">
+    <title>Kulcstarto</title>
+</head>
+<body>
+    <div class="container">
+        <div class="vezerlo">
+            <h1>Kulcstartó készítő</h1>
+            <h5>Kulcstartón lévő név/szöveg: </h5><input type="text" placeholder="Pl: Dr. Lakatos Dzsézönsztetem" id="nev">
+            <div class="meretezo">
+                <div class="meret"><h5>Magasság: </h5><input type="number" id="magassag" class="meret-bevitel" value="17"><h5> mm</h5></div>
+                <div class="meret"><h5>Szélesség: </h5><input type="number" id="szelesseg" class="meret-bevitel" value="35"><h5> mm</h5></div>
+            </div>
+            <div class="gombok">
+                <div id="rajzold" class="gomb" onClick="megrajzol()"><h4>Rajzold meg!</h4></div>
+            </div>    
+        </div>
+    </div>
+    <script src="docs/jquery.js"></script>
+    <script src="docs/script.js"></script>
+    <template class="tarolo">
+       <div class="papir"></div>
+
+    </template>
+</body>
+</html>
